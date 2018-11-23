@@ -9,15 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class WelcomeActivity extends AppCompatActivity
+public class UpdateInformationActivity extends AppCompatActivity
 {
 
-	MenuItem itemToHide;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_welcome);
+		setContentView(R.layout.activity_update_information);
 		Toolbar myToolbar = (Toolbar) findViewById(R.id.ActivityToolbar);
 		setSupportActionBar(myToolbar);
 	}
@@ -26,8 +25,6 @@ public class WelcomeActivity extends AppCompatActivity
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu, menu);
-		itemToHide = menu.findItem(R.id.welcomeScreen);
-
 		return true;
 	}
 
@@ -45,7 +42,6 @@ public class WelcomeActivity extends AppCompatActivity
 				startActivity(intentStatus);
 				break;
 			case R.id.welcomeScreen:
-				itemToHide.setEnabled(false);
 				Intent intentWelcome = new Intent(this, WelcomeActivity.class);
 				startActivity(intentWelcome);
 				break;

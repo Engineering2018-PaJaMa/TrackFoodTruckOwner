@@ -20,6 +20,10 @@
 		</activity>
 		<activity android:name="com.example.pajama.trackfoodtruck.Activities.WelcomeActivity">
 		</activity>
+		<activity android:name="com.example.pajama.trackfoodtruck.Activities.UpdateStatusActivity">
+		</activity>
+		<activity android:name="com.example.pajama.trackfoodtruck.Activities.UpdateInformationActivity">
+		</activity>
 	</application>
 
 </manifest>

@@ -9,5 +9,9 @@
 			android:id="@+id/updateStatus"
 			android:title="Update Status">
 	</item>
+	<item
+			android:id="@+id/welcomeScreen"
+			android:title="Home">
+	</item>
 
 </menu>
