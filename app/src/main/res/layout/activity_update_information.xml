@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:tools="http://schemas.android.com/tools"
 		xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,4 +8,37 @@
 		tools:context="com.example.pajama.trackfoodtruck.Activities.UpdateInformationActivity">
 
 	<include layout="@layout/toolbar"/>
-</android.support.constraint.ConstraintLayout>
+	<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:gravity="center" android:layout_marginTop="100dp">
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				android:text="Name"
+				android:ems="10"
+				android:id="@+id/editTextName"/>
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				android:text="Type"
+				android:ems="10"
+				android:id="@+id/editTextType"/>
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				android:text="Description"
+				android:ems="10"
+				android:id="@+id/editTextDescription"/>
+		<Button
+				android:text="Update information"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/buttonUpdateInformation"
+		/>
+	</LinearLayout>
+</RelativeLayout>
