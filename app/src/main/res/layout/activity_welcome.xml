@@ -7,4 +7,6 @@
 		android:layout_height="match_parent"
 		tools:context="com.example.pajama.trackfoodtruck.Activities.WelcomeActivity">
 
+	<include layout="@layout/toolbar"/>
+
 </android.support.constraint.ConstraintLayout>
